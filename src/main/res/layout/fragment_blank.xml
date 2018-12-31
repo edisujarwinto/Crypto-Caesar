@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textAllCaps="true"
+        android:inputType="textPersonName"
+        android:hint="Plaintext" />
+
+    <EditText
+        android:id="@+id/kunci"
+        android:layout_toRightOf="@id/textin"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Key"/>
+
+    <Button
+        android:id="@+id/set"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@id/textin"
+        android:layout_below="@id/textin"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:background="#0088ff"
+        android:text="Enkrip" />
+
+    <Button
+        android:id="@+id/res"
+        android:layout_alignRight="@id/kunci"
+        android:layout_alignTop="@id/set"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="#0088ff"
+        android:textColor="#ffffff"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/textin"
+        android:layout_alignRight="@id/garis"
+        android:layout_below="@id/set"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:text="rrt"
+        android:textAllCaps="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"/>
+    <TextView
+        android:id="@+id/garis"
+        android:layout_below="@id/hasil"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+</RelativeLayout>
